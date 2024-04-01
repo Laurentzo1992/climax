@@ -41,7 +41,7 @@ def handle_file(filepath, extension):
 if __name__ == "__main__":
     event_handler = MyHandler()
     observer = Observer()
-    observer.schedule(event_handler, path=settings.MEDIA_ROOT, recursive=False)
+    observer.schedule(event_handler, path=settings.DATA_IMPORT, recursive=False)
     observer.start()
     try:
         while True:

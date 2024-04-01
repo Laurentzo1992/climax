@@ -123,6 +123,8 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "climax/static/media")
 
+DATA_IMPORT = os.path.join(BASE_DIR, "data_dir")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
