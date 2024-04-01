@@ -1,0 +1,23 @@
+{% extends "api/home.html" %}
+
+{% block content %}
+
+<h1>Moyenne des salaires par type de profession </h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Profession</th>
+                <th>Moyenne des salaires</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in moyenne_salaires_par_type_profession %}
+            <tr>
+                <td>{{ item.profession__libelle }}</td>
+                <td>{{ item.moyenne_salaire }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock content %}
